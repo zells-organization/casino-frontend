@@ -23,7 +23,7 @@ export const actions = {
     async actionLogIn(context: MainContext, payload: { username: string; password: string }) {
         try {
             const response = await api.logInGetToken(payload.username, payload.password);
-            const token = response.data.access_token;
+            const token = response.data.token;
             if (token) {
                 saveLocalToken(token);
                 commitSetToken(context, token);

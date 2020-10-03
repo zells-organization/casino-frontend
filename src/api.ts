@@ -16,7 +16,7 @@ export const api = {
     params.append('username', username);
     params.append('password', password);
 
-    return axios.post(`${apiUrl}/api/v1/login/access-token`, params);
+    return axios.post(`${apiUrl}/api-token-auth/`, params);
   },
   async signupGetToken(username: string, email: string, password: string) {
     const params = new URLSearchParams();

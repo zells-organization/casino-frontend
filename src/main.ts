@@ -10,6 +10,7 @@ import store from '@/store';
 import './registerServiceWorker';
 import 'vuetify/dist/vuetify.min.css';
 import i18n from '@/plugins/i18n';
+import vuetify from './plugins/vuetify';
 
 Vue.config.productionTip = false;
 
@@ -17,5 +18,6 @@ new Vue({
   i18n,
   router,
   store,
-  render: (h) => h(App),
+  vuetify,
+  render: (h) => h(App)
 }).$mount('#app');

@@ -43,14 +43,7 @@ export const actions = {
     async actionSignup(context: MainContext, payload: { email: string, username: string; password: string }) {
         try {
             const response = await api.signupGetToken(payload.username, payload.email, payload.password);
-            const token = response.data.access_token;
-            if (token) {
-                saveLocalToken(token);
-                commitSetToken(context, token);
-                commitSetLoggedIn(context, true);
-                commitSetSignupError(context, false);
-                await dispatchGetUserProfile(context);
-                await dispatchRouteLoggedIn(context);
+            if (response) {
                 commitAddNotification(context, { content: 'Signup success', color: 'success' });
             } else {
                 commitSetSignupError(context, true);

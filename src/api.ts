@@ -24,7 +24,7 @@ export const api = {
     params.append('email', email);
     params.append('password', password);
 
-    return axios.post(`${apiUrl}/api/v1/login/access-token`, params);
+    return axios.post(`${apiUrl}/api/user/create`, params);
   },
   async getMe(token: string) {
     return axios.get<IUserProfile>(`${apiUrl}/api/v1/users/me`, authHeaders(token));

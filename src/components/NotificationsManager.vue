@@ -12,8 +12,8 @@ import { AppNotification } from '@/store/main/state';
 import { commitRemoveNotification } from '@/store/main/mutations';
 import { readFirstNotification } from '@/store/main/getters';
 import { dispatchRemoveNotification } from '@/store/main/actions';
-import {hideTimeOut, newNotificationTimeOut} from "@/constants/timeOut";
-import {currentInfo} from "@/constants/currentNotificationInfo";
+import {hideTimeOut, newNotificationTimeOut} from '@/constants/timeOut';
+import {currentInfo} from '@/constants/currentNotificationInfo';
 
 @Component
 export default class NotificationsManager extends Vue {
@@ -63,7 +63,8 @@ export default class NotificationsManager extends Vue {
         if (newNotification !== this.currentNotification) {
             await this.setNotification(newNotification);
             if (newNotification) {
-                dispatchRemoveNotification(this.$store, { notification: newNotification, timeout: newNotificationTimeOut });
+                dispatchRemoveNotification(this.$store,
+                    { notification: newNotification, timeout: newNotificationTimeOut });
             }
         }
     }

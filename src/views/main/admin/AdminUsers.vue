@@ -29,11 +29,11 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import { Store } from 'vuex';
-import { IUserProfile } from '@/interfaces';
+// import { Store } from 'vuex';
+// import { IUserProfile } from '@/interfaces';
 import { readAdminUsers } from '@/store/admin/getters';
 import { dispatchGetUsers } from '@/store/admin/actions';
-import {headers} from "@/constants/adminUsersHeaders";
+import {headers} from '@/constants/adminUsersHeaders';
 
 @Component
 export default class AdminUsers extends Vue {

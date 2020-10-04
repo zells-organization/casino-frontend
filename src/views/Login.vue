@@ -71,8 +71,8 @@ import {Component, Vue} from 'vue-property-decorator';
 import {appName} from '@/env';
 import {readLoginError} from '@/store/main/getters';
 import {dispatchLogIn} from '@/store/main/actions';
-import NotificationsManager from "@/components/NotificationsManager.vue";
-import LanguageSwitcher from "@/views/LanguageSwitcher.vue";
+import NotificationsManager from '@/components/NotificationsManager.vue';
+import LanguageSwitcher from '@/views/LanguageSwitcher.vue';
 
 
 @Component({

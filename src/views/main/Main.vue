@@ -124,7 +124,7 @@ import { appName } from '@/env';
 import { readDashboardMiniDrawer, readDashboardShowDrawer, readHasAdminAccess } from '@/store/main/getters';
 import { commitSetDashboardShowDrawer, commitSetDashboardMiniDrawer } from '@/store/main/mutations';
 import { dispatchUserLogOut } from '@/store/main/actions';
-import {endPoints} from "@/constants/endPoints";
+import {endPoints} from '@/constants/endPoints';
 
 const routeGuardMain = async (to, from, next) => {
   if (to.path === endPoints.mainMain) {

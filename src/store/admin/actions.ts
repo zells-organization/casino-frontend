@@ -7,7 +7,7 @@ import { getStoreAccessors } from 'typesafe-vuex';
 import { commitSetUsers, commitSetUser } from './mutations';
 import { dispatchCheckApiError } from '../main/actions';
 import { commitAddNotification, commitRemoveNotification } from '../main/mutations';
-import {hideTimeOut} from "@/constants/timeOut";
+import {hideTimeOut} from '@/constants/timeOut';
 
 type MainContext = ActionContext<AdminState, State>;
 

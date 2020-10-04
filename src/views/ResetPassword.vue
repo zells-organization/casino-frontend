@@ -55,10 +55,10 @@ import {IUserProfileUpdate} from '@/interfaces';
 import {appName} from '@/env';
 import {commitAddNotification} from '@/store/main/mutations';
 import {dispatchResetPassword} from '@/store/main/actions';
-import LanguageSwitcher from "@/views/LanguageSwitcher.vue";
-import NotificationsManager from "@/components/NotificationsManager.vue";
-import {endPoints} from "@/constants/endPoints";
-import {addNotification} from "@/constants/addNotification";
+import LanguageSwitcher from '@/views/LanguageSwitcher.vue';
+import NotificationsManager from '@/components/NotificationsManager.vue';
+import {endPoints} from '@/constants/endPoints';
+import {addNotification} from '@/constants/addNotification';
 
 @Component({
   components: {

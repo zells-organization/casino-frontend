@@ -15,7 +15,7 @@ import {
     commitSetSignupError,
 } from './mutations';
 import { AppNotification, MainState } from './state';
-import {hideTimeOut} from "@/constants/timeOut";
+import {hideTimeOut} from '@/constants/timeOut';
 
 type MainContext = ActionContext<MainState, State>;
 

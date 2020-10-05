@@ -4,7 +4,8 @@
       <v-layout column fill-height>
         <v-list>
           <v-subheader>Main menu</v-subheader>
-          <v-list-item href="/main/dashboard">
+
+          <v-list-item to="/main/dashboard">
             <v-list-item-action>
               <v-icon>web</v-icon>
             </v-list-item-action>
@@ -13,7 +14,7 @@
             </v-list-item-content>
           </v-list-item>
 
-          <v-list-item href="/main/profile/view">
+          <v-list-item to="/main/profile/view">
             <v-list-item-action>
               <v-icon>person</v-icon>
             </v-list-item-action>
@@ -22,7 +23,7 @@
             </v-list-item-content>
           </v-list-item>
 
-          <v-list-item href="/main/profile/edit">
+          <v-list-item to="/main/profile/edit">
             <v-list-item-action>
               <v-icon>edit</v-icon>
             </v-list-item-action>
@@ -31,7 +32,7 @@
             </v-list-item-content>
           </v-list-item>
 
-          <v-list-item href="/main/profile/password">
+          <v-list-item to="/main/profile/password">
             <v-list-item-action>
               <v-icon>vpn_key</v-icon>
             </v-list-item-action>
@@ -45,7 +46,7 @@
 
         <v-list subheader v-show="hasAdminAccess">
           <v-subheader>Admin</v-subheader>
-          <v-list-item href="/main/admin/users/all">
+          <v-list-item to="/main/admin/users/all">
             <v-list-item-action>
               <v-icon>group</v-icon>
             </v-list-item-action>
@@ -53,7 +54,7 @@
               <v-list-item-title>Manage Users</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
-          <v-list-item href="/main/admin/users/create">
+          <v-list-item to="/main/admin/users/create">
             <v-list-item-action>
               <v-icon>person_add</v-icon>
             </v-list-item-action>
@@ -85,8 +86,9 @@
       </v-layout>
     </v-navigation-drawer>
 
-    <v-toolbar dark color="primary" app>
-      <v-toolbar-side-icon @click.stop="switchShowDrawer"></v-toolbar-side-icon>
+    <v-app-bar dark color="primary" app>
+<!--      <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>-->
+      <v-app-bar-nav-icon @click.stop="switchShowDrawer"></v-app-bar-nav-icon>
       <v-toolbar-title v-text="appName"></v-toolbar-title>
 
       <v-spacer></v-spacer>
@@ -114,7 +116,8 @@
           </v-list-item>
         </v-list>
       </v-menu>
-    </v-toolbar>
+    </v-app-bar>
+
     <v-content>
       <router-view></router-view>
     </v-content>
@@ -124,6 +127,8 @@
     </v-footer>
   </div>
 </template>
+
+
 
 <script lang="ts">
 import { Vue, Component } from 'vue-property-decorator';

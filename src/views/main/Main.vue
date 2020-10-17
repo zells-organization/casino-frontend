@@ -109,7 +109,11 @@
         <v-list>
           <v-list-item to="/main/games/slotmachine"
           >
-            <v-list-item-title>Game</v-list-item-title>
+            <v-list-item-title>Slot machine</v-list-item-title>
+          </v-list-item>
+          <v-list-item to="/main/games/blackjack"
+          >
+            <v-list-item-title>Blackjack</v-list-item-title>
           </v-list-item>
         </v-list>
       </v-menu>

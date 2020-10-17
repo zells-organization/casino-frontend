@@ -90,7 +90,29 @@
 <!--      <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>-->
       <v-app-bar-nav-icon @click.stop="switchShowDrawer"></v-app-bar-nav-icon>
       <v-toolbar-title v-text="appName"></v-toolbar-title>
+      <v-menu
+          open-on-hover
+          down
+          offset-y
+      >
+        <template v-slot:activator="{ on, attrs }">
+          <v-btn
+              color="primary"
+              dark
+              v-bind="attrs"
+              v-on="on"
+          >
+            Dropdown
+          </v-btn>
+        </template>
 
+        <v-list>
+          <v-list-item to="/main/games/slotmachine"
+          >
+            <v-list-item-title>Game</v-list-item-title>
+          </v-list-item>
+        </v-list>
+      </v-menu>
       <v-spacer></v-spacer>
 
       <v-menu bottom left offset-y>

@@ -43,6 +43,16 @@ export default new Router({
               component: () => import(/* webpackChunkName: "main-dashboard" */ './views/main/Dashboard.vue'),
             },
             {
+              path: 'games',
+              component: RouterComponent,
+              children: [
+                {
+                  path: 'slotmachine',
+                  component: () => import('./views/main/games/slot-machine/SlotMachine.vue'),
+                },
+              ],
+            },
+            {
               path: 'profile',
               component: RouterComponent,
               redirect: 'profile/view',

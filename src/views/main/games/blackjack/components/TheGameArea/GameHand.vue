@@ -77,7 +77,7 @@ export default {
   transform: scale(0.9);
 }
 .game-hand.is-active, .game-hand.is-split.is-active {
-  position: absolute;
+  position: relative;
   max-width: 55%;
   transform: scale(1.3);
   z-index: 100;

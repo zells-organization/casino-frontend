@@ -1,10 +1,9 @@
 <template>
   <div class="game">
     <TheStars />
-    <TheSidebar />
     <TheGameArea />
     <TheMenuButton />
-    <TheTitleScreen v-if="$store.state.blackjack.isTitleShowing" />
+<!--    <TheTitleScreen v-if="$store.state.blackjack.isTitleShowing" />-->
   </div>
 </template>
 
@@ -21,6 +20,9 @@ export default {
     TheStars,
     TheGameArea,
     TheMenuButton
+  },
+  mounted () {
+    setTimeout(() => { this.$store.dispatch('startNewGame') }, 2000)
   }
 }
 </script>
@@ -35,18 +37,13 @@ export default {
   flex-flow: row nowrap;
   background-color: rgb(63, 111, 194);
 }
-html, body, .game {
-  height: 100%;
-  overflow: hidden;
-  margin: 0;
+html, body {
+  margin:0;
+  padding:0;
+  height:100%;
 }
 html {
   font-size: 16px;
-}
-@media (max-height: 768px) {
-  html {
-  font-size: calc(5px + 0.5vh);
-  }
 }
 body {
   background: rgb(63, 111, 194);

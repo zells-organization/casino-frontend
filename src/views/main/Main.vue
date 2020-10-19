@@ -158,10 +158,6 @@
     <v-content>
       <router-view></router-view>
     </v-content>
-    <v-footer class="pa-3" fixed app>
-      <v-spacer></v-spacer>
-      <span>&copy; {{appName}}</span>
-    </v-footer>
   </div>
 </template>
 
@@ -231,3 +227,13 @@ export default class Main extends Vue {
   }
 }
 </script>
+
+
+
+<style lang="scss">
+
+main {
+  height: 100%;
+  position: relative;
+}
+</style>

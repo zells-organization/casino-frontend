@@ -1,16 +1,7 @@
 <template>
   <aside class="sidebar" :class="{ 'open': showDrawer }">
     <GameLogo />
-    <p class="tagline">
-      Built with
-      <a
-        href="https://vuejs.org/"
-        title="vuejs.org"
-        target="_blank"
-      >
-        Vue.js
-      </a>
-    </p>
+
     <button @click="toggleBasicStrategy" class="toggle">
       <svg version="1.1" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" xml:space="preserve">
         <path v-if="showBasicStrategy" d="M18,1H6C3.3,1,1,3.3,1,6v12c0,2.8,2.3,5,5,5h12c2.8,0,5-2.3,5-5V6C23,3.3,20.8,1,18,1z M19.1,7.3l-8.5,11.1
@@ -23,18 +14,18 @@
     </button>
     <div class="footer">
       <p>
-        &copy; 2017&ndash;{{ new Date().getFullYear() }}
+        &copy; 2020&ndash;{{ new Date().getFullYear() }}
         <a
-          href="https://twitter.com/kevinleedrum"
-          title="twitter"
+          href=""
+          title=""
           target="_blank"
         >
-          Kevin Lee Drum
+          Cells Casino
         </a>
       </p>
       <p>
         <a
-          href="https://github.com/kevinleedrum/vlackjack/"
+          href=""
           title="GitHub project page"
           target="_blank"
         >
@@ -75,7 +66,7 @@ export default {
   align-items: center;
   width: 320px;
   font-size: 1rem;
-  color: #f4f2e0;;
+  color: #f4f2e0;
   z-index: 100;
   background: rgb(12, 36, 48);;
   height: 100%;
@@ -83,7 +74,7 @@ export default {
 }
 @media (max-width: 1199px) {
   .sidebar {
-    position: absolute;
+    position: relative;
     transform: translateX(-320px);
   }
   .sidebar.open {

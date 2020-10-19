@@ -52,7 +52,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .game-area {
   height: 100%;
   display: flex;

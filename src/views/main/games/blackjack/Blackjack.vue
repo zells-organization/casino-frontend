@@ -26,9 +26,14 @@ export default {
 </script>
 
 <style lang="scss">
+
 .game {
   display: flex;
+  position: relative;
+  height: 100%;
+  width: 100%;
   flex-flow: row nowrap;
+  background-color: rgb(63, 111, 194);
 }
 html, body, .game {
   height: 100%;

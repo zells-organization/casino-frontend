@@ -67,7 +67,7 @@ export default {
   pointer-events: none;
 }
 .dealer-side {
-  margin-top: 1rem;
+  //margin-top: 1rem;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;

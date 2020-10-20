@@ -92,10 +92,11 @@ svg {
 .game-button {
   display: inline-block;
   padding: 0 0.5rem;
-  max-width: 8rem;
-  height: 6rem;
+  max-width: 6rem;
+  height: 4rem;
   border: 0;
-  margin: 0 0.5rem;
+  margin-top: 2.7rem;
+  margin-right: 1.5rem;
   background-color: rgba(255, 255, 255, 0.75);
   border-radius: 2em;
   transition: opacity 0.2s ease;

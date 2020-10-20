@@ -35,7 +35,7 @@ export default {
   height: 100%;
   width: 100%;
   flex-flow: row nowrap;
-  background-color: rgb(63, 111, 194);
+  background-color: rgb(16, 16, 16);
 }
 html, body {
   margin:0;
@@ -46,7 +46,7 @@ html {
   font-size: 16px;
 }
 body {
-  background: rgb(63, 111, 194);
+  background: rgb(16, 16, 16);
   font-family: 'Helvetica', 'Arial', sans-serif;
 }
 :focus {

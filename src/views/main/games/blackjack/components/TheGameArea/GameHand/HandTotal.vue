@@ -35,10 +35,10 @@ export default {
   position: absolute;
   top: -1.5rem;
   right: -1.5rem;
-  width: 3rem;
-  height: 3rem;
-  font-size: 1.5rem;
-  font-weight: 600;
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 1.3rem;
+  font-weight: 500;
   line-height: 2em;
   background: rgb(239, 240, 252);;
   border-radius: 50%;

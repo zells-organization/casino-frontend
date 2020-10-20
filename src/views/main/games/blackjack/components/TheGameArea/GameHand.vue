@@ -74,12 +74,12 @@ export default {
   transition: transform 0.2s ease;
 }
 .game-hand.is-dealer, .game-hand.is-split {
-  transform: scale(0.9);
+  transform: scale(0.7);
 }
 .game-hand.is-active, .game-hand.is-split.is-active {
-  position: absolute;
+  position: relative;
   max-width: 55%;
-  transform: scale(1.3);
+  transform: scale(1.1);
   z-index: 100;
 }
 .game-hand.is-split {

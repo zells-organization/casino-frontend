@@ -39,6 +39,8 @@ export default {
   height: 4rem;
   display: inline-flex;
   padding: 1rem;
+  margin-top: 2.5rem;
+  margin-right: 1.5rem;
   justify-content: center;
   align-items: center;
   border-radius: 1em;

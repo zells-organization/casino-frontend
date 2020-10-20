@@ -23,7 +23,7 @@
         <div class="stick2"></div>
         <div class="stick"></div>
         <div class="ball" @click="!disabled && turn()"></div>
-      </div>x;
+      </div>
     </div>
     <div
       class="history"
@@ -117,10 +117,10 @@ export default {
   $white: #f4f2e0;
   $border-size: 5px;
   //
-  width: 100vw;
-  height: 100vh;
-  min-width: 900px;
-  min-height: 700px;
+  width: 100%;
+  height: 100%;
+  //min-width: 900px;
+  //min-height: 700px;
   background-color: #09384c;
   position: relative;
   display: flex;

@@ -41,7 +41,7 @@ export default {
 <style scoped>
 .hand-bet {
   position: absolute;
-  bottom: -4rem;
+  bottom: -1.5rem;
   left: 0;
   width: 100%;
   text-align: center;

@@ -38,8 +38,8 @@ export default {
 .card {
   position: relative;
   display: inline-block;
-  width: 8rem;
-  height: 12rem;
+  width: 6rem;
+  height: 10rem;
   margin: 0.2rem;
   transition: all 0.2s ease;
 }

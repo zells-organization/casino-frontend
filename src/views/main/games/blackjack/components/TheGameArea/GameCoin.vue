@@ -10,7 +10,7 @@
 
 <style scoped>
 .game-coin {
-  width: 3rem;
-  height: 3rem;
+  width: 2rem;
+  height: 2rem;
 }
 </style>

@@ -57,6 +57,9 @@
           >
             <v-list-item-title>Dominoes</v-list-item-title>
           </v-list-item>
+          <v-list-item to="/main/games/poker">
+            <v-list-item-title>Poker</v-list-item-title>
+          </v-list-item>
         </v-list>
 
         <v-list subheader v-show="hasAdminAccess">
@@ -129,6 +132,9 @@
           <v-list-item to="/main/games/blackjack"
           >
             <v-list-item-title>Blackjack</v-list-item-title>
+          </v-list-item>
+          <v-list-item to="/main/games/poker">
+            <v-list-item-title>Poker</v-list-item-title>
           </v-list-item>
         </v-list>
       </v-menu>

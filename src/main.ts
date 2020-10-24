@@ -11,8 +11,11 @@ import './registerServiceWorker';
 import 'vuetify/dist/vuetify.min.css';
 import i18n from '@/plugins/i18n';
 import vuetify from './plugins/vuetify';
+import VueLodash from 'vue-lodash';
+import lodash from 'lodash';
 
 Vue.config.productionTip = false;
+Vue.use(VueLodash, { name: 'custom', lodash  });
 
 new Vue({
   i18n,

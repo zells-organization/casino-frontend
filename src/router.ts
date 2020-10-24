@@ -54,6 +54,10 @@ export default new Router({
                   path: 'blackjack',
                   component: () => import('./views/main/games/blackjack/Blackjack.vue'),
                 },
+                {
+                  path: 'poker',
+                  component: () => import('./views/main/games/poker/Poker.vue'),
+                },
               ],
             },
             {

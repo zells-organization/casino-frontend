@@ -5,6 +5,7 @@ import { mainModule } from './main';
 import { State } from './state';
 import { adminModule } from './admin';
 import {blackjackModule} from '../views/main/games/blackjack/store';
+import {pokerModule} from '../views/main/games/poker/store';
 
 Vue.use(Vuex);
 
@@ -13,6 +14,7 @@ const storeOptions: StoreOptions<State> = {
     main: mainModule,
     admin: adminModule,
     blackjack: blackjackModule,
+    poker: pokerModule,
   },
 };
 

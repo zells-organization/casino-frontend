@@ -36,11 +36,9 @@ export default {
 
 <style>
 .intro {
-    width: 30%;
+    width: 100%;
+    height: 100%;
     position: relative;
-    top: 300px;
-    margin: 20px auto;
-    padding: 15px;
     border: solid 3px white;
     border-radius: 5px;
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, .3);

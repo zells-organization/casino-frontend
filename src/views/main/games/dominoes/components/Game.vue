@@ -43,19 +43,15 @@ export default {
 <style>
 
 #intro {
-    padding: 15px;
     background-color: brown;
     color: white;
-    margin: 20px auto;
 }
 input {
     display: block;
     width: 100%;
     border: solid 1px red;
-    margin-bottom: 10px;
 }
 .center {
-  width: 90%;
-  margin: 10px auto;
+  width: 100%;
 }
 </style>

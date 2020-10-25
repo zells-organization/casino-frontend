@@ -47,9 +47,7 @@ export default {
 .board {
     width: 100%;
     min-height: 400px;
-    margin: 10px auto;
     background-color: green;
-    padding: 10px;
 }
 .flex-board {
     display: flex;

@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    
+
     <game></game>
   </div>
 </template>
@@ -9,7 +9,7 @@
 import Game from './components/Game.vue';
 
 export default {
-  
+
   components: {
     Game,
   },
@@ -22,6 +22,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  margin-top: 60px;
+  width: 100%;
+  height: 100%;
 }
 </style>

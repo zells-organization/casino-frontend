@@ -8,16 +8,52 @@
            <div class="well" style="margin-bottom: 30px">
               <div style="padding-top: 5px; padding-bottom: 5px;" class="text-center">
                 <span style="font-weight: 900; text-transform: uppercase; font-size: 14px"><span v-bind:class="{disabledText: !betAllowed}">Place bet:&nbsp;</span></span>
-                <span class="btn-group" role="group">
-                    <button type="button" class="btn btn-default" v-bind:class="{disabled: !betAllowed}" v-on:click="placeBet(5)">5</button>
-                    <button type="button" class="btn btn-default" v-bind:class="{disabled: !betAllowed}" v-on:click="placeBet(10)">10</button>
-                    <button type="button" class="btn btn-default" v-bind:class="{disabled: !betAllowed}" v-on:click="placeBet(15)">15</button>
-                    <button type="button" class="btn btn-default" v-bind:class="{disabled: !betAllowed}" v-on:click="placeBet(20)">20</button>
-                    <button type="button" class="btn btn-default" v-bind:class="{disabled: !betAllowed}" v-on:click="placeBet(25)">25</button>
-                  </span>
+                <v-btn-toggle
+                    v-model="toggle_one"
+                    shaped
+                    mandatory
+                >
+                  <v-btn v-bind:class="{disabled: !betAllowed}" v-on:click="placeBet(5)">
+                    5
+                  </v-btn>
+
+                  <v-btn v-bind:class="{disabled: !betAllowed}" v-on:click="placeBet(10)">
+                    10
+                  </v-btn>
+
+                  <v-btn v-bind:class="{disabled: !betAllowed}" v-on:click="placeBet(15)">
+                    15
+                  </v-btn>
+
+                  <v-btn v-bind:class="{disabled: !betAllowed}" v-on:click="placeBet(20)">
+                    20
+                  </v-btn>
+
+                  <v-btn v-bind:class="{disabled: !betAllowed}" v-on:click="placeBet(25)">
+                    25
+                  </v-btn>
+                </v-btn-toggle>
+
                   &nbsp;&nbsp;
-                 <button class="btn btn-primary" v-on:click="dealHand()" v-bind:class="{disabled: disableShuffle}">Shuffle Up and Deal!!</button>&nbsp;&nbsp;
-                 <button class="btn btn-primary" v-on:click="drawFromDeck(discards.length)" v-bind:class="{disabled: betAllowed}">Discard {{discards.length}}</button>
+                <v-btn
+                    class="ma-2"
+                    @click="dealHand()"
+                    :class="{disabled: disableShuffle}"
+                    color="secondary"
+                >
+                  Shuffle Up and Deal!!
+                </v-btn>
+
+                <v-btn
+                    class="ma-2"
+                    v-on:click="drawFromDeck(discards.length)"
+                    v-bind:class="{disabled: betAllowed}"
+                    color="secondary"
+                >
+                  Discard {{discards.length}}
+                </v-btn>
+<!--                 <button class="btn btn-primary" v-on:click="dealHand()" v-bind:class="{disabled: disableShuffle}">Shuffle Up and Deal!!</button>&nbsp;&nbsp;-->
+<!--                 <button class="btn btn-primary" v-on:click="drawFromDeck(discards.length)" v-bind:class="{disabled: betAllowed}">Discard {{discards.length}}</button>-->
                 <!--<div style="margin-top: 15px; font-weight: 700">
                  Coins bet: {{coins_bet}} | Discard Index: {{discards}} | Cards left: {{deck.length}} |  Draws: {{numberOfDraws}}
                </div>-->

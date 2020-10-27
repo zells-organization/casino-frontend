@@ -399,4 +399,7 @@ export default {
 .discard {opacity: .3}
 .handFinished {opacity: .7}
 .disabledText {color: #ddd}
+.poker {
+  text-align: center;
+}
 </style>

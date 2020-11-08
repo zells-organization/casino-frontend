@@ -30,6 +30,7 @@ import { dispatchCheckLoggedIn } from '@/store/main/actions';
     NotificationsManager,
   },
 })
+
 export default class App extends Vue {
 
   get loggedIn() {
@@ -39,7 +40,11 @@ export default class App extends Vue {
   public async created() {
     await dispatchCheckLoggedIn(this.$store);
   }
+
 }
+
 </script>
+
+
 
 

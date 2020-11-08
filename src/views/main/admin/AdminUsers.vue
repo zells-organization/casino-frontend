@@ -17,7 +17,7 @@
         <td class="justify-center layout px-0">
           <v-tooltip top>
             <span>Edit</span>
-            <v-btn slot="activator" flat :to="{name: 'main-admin-users-edit', params: {id: props.item.id}}">
+            <v-btn slot="activator" text :to="{name: 'main-admin-users-edit', params: {id: props.item.id}}">
               <v-icon>edit</v-icon>
             </v-btn>
           </v-tooltip>
@@ -29,11 +29,11 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import { Store } from 'vuex';
-import { IUserProfile } from '@/interfaces';
+// import { Store } from 'vuex';
+// import { IUserProfile } from '@/interfaces';
 import { readAdminUsers } from '@/store/admin/getters';
 import { dispatchGetUsers } from '@/store/admin/actions';
-import {headers} from "@/constants/adminUsersHeaders";
+import {headers} from '@/constants/adminUsersHeaders';
 
 @Component
 export default class AdminUsers extends Vue {

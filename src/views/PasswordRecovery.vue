@@ -41,8 +41,8 @@
 import { Component, Vue } from 'vue-property-decorator';
 import { appName } from '@/env';
 import { dispatchPasswordRecovery } from '@/store/main/actions';
-import LanguageSwitcher from "@/views/LanguageSwitcher.vue";
-import NotificationsManager from "@/components/NotificationsManager.vue";
+import LanguageSwitcher from '@/views/LanguageSwitcher.vue';
+import NotificationsManager from '@/components/NotificationsManager.vue';
 
 
 @Component({

@@ -103,7 +103,7 @@ import { Component, Vue } from 'vue-property-decorator';
 import { IUserProfile, IUserProfileUpdate } from '@/interfaces';
 import { dispatchGetUsers, dispatchUpdateUser } from '@/store/admin/actions';
 import { readAdminOneUser } from '@/store/admin/getters';
-import {endPoints} from "@/constants/endPoints";
+import {endPoints} from '@/constants/endPoints';
 
 @Component
 export default class EditUser extends Vue {

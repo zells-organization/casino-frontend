@@ -44,7 +44,7 @@ import {
   IUserProfileCreate,
 } from '@/interfaces';
 import { dispatchGetUsers, dispatchCreateUser } from '@/store/admin/actions';
-import {endPoints} from "@/constants/endPoints";
+import {endPoints} from '@/constants/endPoints';
 
 @Component
 export default class CreateUser extends Vue {

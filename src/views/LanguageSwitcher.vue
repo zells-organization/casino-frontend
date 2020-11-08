@@ -36,36 +36,38 @@
 </template>
 
 <script>
-import {languages} from "@/constants/languagesChoose";
-import {currentLocalLanguage, currentLocalEnglish} from "@/constants/currentLanguage";
+import {languages} from '@/constants/languagesChoose';
+import {currentLocalLanguage, currentLocalEnglish} from '@/constants/currentLanguage';
 
 
 export default {
-  data(){
+  data() {
     return{
-      currentLanguage: window.localStorage.getItem(currentLocalLanguage) || navigator.language.split('-')[0] || currentLocalEnglish,
-      languages: languages
-    }
+      currentLanguage: window.localStorage.getItem(currentLocalLanguage) ||
+          navigator.language.split('-')[0] ||
+          currentLocalEnglish,
+      languages : languages,
+    };
   },
   computed: {
     currentLanguageIcon() {
       if (!this.currentLanguage || !this.currentLanguage) {
         return null;
       }
-      return this.languages.filter(x => x.id === this.currentLanguage)[0]
+      return this.languages.filter((x) => x.id === this.currentLanguage)[0]
           .flagSrc;
-    }
+    },
   },
 
   methods: {
     changeLanguage(id) {
-      if (this.$i18n.locale !== id){
+      if (this.$i18n.locale !== id) {
         this.$i18n.locale = id;
         this.currentLanguage = id;
         window.localStorage.setItem(currentLocalLanguage, id);
       }
-    }
-  }
+    },
+  },
 };
 </script>
 

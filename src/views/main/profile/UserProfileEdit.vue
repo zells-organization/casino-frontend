@@ -49,7 +49,7 @@ import { Store } from 'vuex';
 import { IUserProfileUpdate } from '@/interfaces';
 import { readUserProfile } from '@/store/main/getters';
 import { dispatchUpdateUserProfile } from '@/store/main/actions';
-import {endPoints} from "@/constants/endPoints";
+import {endPoints} from '@/constants/endPoints';
 
 @Component
 export default class UserProfileEdit extends Vue {

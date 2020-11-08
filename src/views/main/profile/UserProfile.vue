@@ -28,7 +28,7 @@
 import { Component, Vue } from 'vue-property-decorator';
 import { Store } from 'vuex';
 import { readUserProfile } from '@/store/main/getters';
-import {endPoints} from "@/constants/endPoints";
+import {endPoints} from '@/constants/endPoints';
 
 @Component
 export default class UserProfile extends Vue {

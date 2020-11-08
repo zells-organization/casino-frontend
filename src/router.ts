@@ -20,7 +20,7 @@ export default new Router({
           // this generates a separate chunk (about.[hash].js) for this route
           // which is lazy-loaded when the route is visited.
           component: () => import(/* webpackChunkName: "login" */ './views/Login.vue'),
-          meta: { title: i18n.t('loginPage.title') },
+          meta: {title: i18n.t('loginPage.title')},
         },
         {
           path: 'signup',
@@ -41,6 +41,28 @@ export default new Router({
             {
               path: 'dashboard',
               component: () => import(/* webpackChunkName: "main-dashboard" */ './views/main/Dashboard.vue'),
+            },
+            {
+              path: 'games',
+              component: RouterComponent,
+              children: [
+                {
+                  path: 'slotmachine',
+                  component: () => import('./views/main/games/slot-machine/SlotMachine.vue'),
+                },
+                {
+                  path: 'blackjack',
+                  component: () => import('./views/main/games/blackjack/Blackjack.vue'),
+                },
+                {
+                  path: 'poker',
+                  component: () => import('./views/main/games/poker/Poker.vue'),
+                },
+                {
+                  path: 'dominoes',
+                  component: () => import('./views/main/games/dominoes/Dominoes.vue'),
+                }
+              ],
             },
             {
               path: 'profile',

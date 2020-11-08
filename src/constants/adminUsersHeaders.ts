@@ -33,4 +33,4 @@ export const headers =
     text: 'Actions',
         value: 'id',
 },
-    ]
+    ];

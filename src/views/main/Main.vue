@@ -40,6 +40,15 @@
               <v-list-item-title>Change Password</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
+
+          <v-list-item to="/main/admin">
+            <v-list-item-action>
+              <v-icon>mdi-account-lock</v-icon>
+            </v-list-item-action>
+            <v-list-item-content>
+              <v-list-item-title>Admin panel</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
         </v-list>
 
         <v-divider></v-divider>
@@ -113,30 +122,6 @@
           down
           offset-y
       >
-        <template v-slot:activator="{ on, attrs }">
-          <v-btn
-              color="primary"
-              dark
-              v-bind="attrs"
-              v-on="on"
-          >
-            Dropdown
-          </v-btn>
-        </template>
-
-        <v-list>
-          <v-list-item to="/main/games/slotmachine"
-          >
-            <v-list-item-title>Slot machine</v-list-item-title>
-          </v-list-item>
-          <v-list-item to="/main/games/blackjack"
-          >
-            <v-list-item-title>Blackjack</v-list-item-title>
-          </v-list-item>
-          <v-list-item to="/main/games/poker">
-            <v-list-item-title>Poker</v-list-item-title>
-          </v-list-item>
-        </v-list>
       </v-menu>
       <v-spacer></v-spacer>
 

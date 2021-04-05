@@ -69,6 +69,9 @@
           <v-list-item to="/main/games/poker">
             <v-list-item-title>Poker</v-list-item-title>
           </v-list-item>
+          <v-list-item to="/main/games/roulette">
+            <v-list-item-title>Roulette</v-list-item-title>
+          </v-list-item>
         </v-list>
 
         <v-list subheader v-show="hasAdminAccess">

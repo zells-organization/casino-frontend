@@ -61,6 +61,10 @@ export default new Router({
                 {
                   path: 'dominoes',
                   component: () => import('./views/main/games/dominoes/Dominoes.vue'),
+                },
+                {
+                  path: 'roulette',
+                  component: () => import('./views/main/games/roulette/Roulette.vue')
                 }
               ],
             },

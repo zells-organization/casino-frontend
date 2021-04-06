@@ -1,68 +1,28 @@
 <template>
-  <div id="app">
+  <div id="roulette">
     <vue-winwheel :segments="options" />
   </div>
 </template>
 
 <script>
 import VueWinwheel from "vue-winwheel/vue-winwheel";
+import options from "@/config/roulette/options";
 
 export default {
-  name: "app",
+  name: "roulette",
   components: {
     VueWinwheel
   },
   data() {
     return {
-      options: [
-        {
-          textFillStyle: "#fff",
-          fillStyle: "#000",
-          text: "Prize 1"
-        },
-        {
-          textFillStyle: "#000",
-          fillStyle: "#fadede",
-          text: "Prize 2"
-        },
-        {
-          textFillStyle: "#fff",
-          fillStyle: "#000",
-          text: "Prize 3"
-        },
-        {
-          textFillStyle: "#000",
-          fillStyle: "#fadede",
-          text: "Prize 4"
-        },
-        {
-          textFillStyle: "#fff",
-          fillStyle: "#000",
-          text: "Prize 5"
-        },
-        {
-          textFillStyle: "#000",
-          fillStyle: "#fadede",
-          text: "Prize 6"
-        },
-        {
-          textFillStyle: "#fff",
-          fillStyle: "#000",
-          text: "Prize 7"
-        },
-        {
-          textFillStyle: "#000",
-          fillStyle: "#fadede",
-          text: "Prize 8"
-        }
-      ]
+      options
     };
   }
 };
 </script>
 
 <style>
-#app {
+#roulette {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

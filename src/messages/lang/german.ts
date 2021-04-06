@@ -37,6 +37,6 @@ export default {
         errors: {
             incorrectEmail: `Email bereits registriert`,
         },
+        USER_CONFIRM_EMAIL: `E-Mail bereits registriert`,
     },
-    USER_CONFIRM_EMAIL: `Почта уже зарегистрирована`,
 };

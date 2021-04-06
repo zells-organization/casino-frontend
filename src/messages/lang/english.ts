@@ -37,5 +37,7 @@ export default {
         errors: {
             incorrectEmail: `Email address already registered`,
         },
+        USER_CONFIRM_EMAIL: `Email already registered`,
+
     },
 };

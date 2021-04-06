@@ -14,4 +14,9 @@ export const languages = [
         title: 'Русский',
         flagSrc: 'https://cdn.vuetifyjs.com/images/flags/ru.png',
     },
+    {
+        id: 'ua',
+        title: 'Українська',
+        flagSrc: 'https://i.pinimg.com/originals/e8/58/d5/e858d55774d22e63a67be3449e618828.jpg',
+    },
 ];

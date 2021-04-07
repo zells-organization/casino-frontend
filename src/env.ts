@@ -1,14 +1,14 @@
 const env = process.env.VUE_APP_ENV;
 
-let envApiUrl = '';
+let envApiUrl = 'https://vasino-app.herokuapp.com';
 
-if (env === 'production') {
-  envApiUrl = `https://vasino-app.herokuapp.com`;
-} else if (env === 'staging') {
-  envApiUrl = `https://${process.env.VUE_APP_DOMAIN_STAG}`;
-} else {
-  envApiUrl = `http://${process.env.VUE_APP_DOMAIN_DEV}`;
-}
+// if (env === 'production') {
+//   envApiUrl = `https://vasino-app.herokuapp.com`;
+// } else if (env === 'staging') {
+//   envApiUrl = `https://${process.env.VUE_APP_DOMAIN_STAG}`;
+// } else {
+//   envApiUrl = `http://${process.env.VUE_APP_DOMAIN_DEV}`;
+// }
 
 export const apiUrl = envApiUrl;
 export const appName = process.env.VUE_APP_NAME;
